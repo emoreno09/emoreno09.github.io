@@ -26,18 +26,54 @@
             text-align: justify;
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: #0066cc; /* RoyalBlue */
         }
 
-        h3 {
-            color: #003366; /* DarkSlateBlue */
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .about-me {
+            margin-bottom: 20px;
         }
 
         .contact-form {
             background-color: #cce5ff; /* LightBlue */
             padding: 20px;
             border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #003366; /* DarkSlateBlue */
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #0066cc; /* RoyalBlue */
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0066cc; /* RoyalBlue */
+            color: #fff; /* White */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004080; /* DarkBlue */
         }
 
         footer {
@@ -58,16 +94,14 @@
         <h2>Behavioral Support Assistant | Aspiring Elementary Educator</h2>
     </header>
 
-    <section>
-        <h3>About Me</h3>
-        <p>Welcome to my personal website! I am Elissa Moreno, a passionate behavioral support assistant and a dedicated student at Western Governors University pursuing a Bachelor's in Elementary Education.</p>
-
-        <h3>Education</h3>
-        <p>I am currently enrolled at Western Governors University, working towards a Bachelor's degree in Elementary Education. My journey in education is driven by a commitment to creating a positive learning environment for every child.</p>
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Welcome to my professional portfolio! I am Elissa Moreno, a dedicated Behavioral Support Assistant currently pursuing a Bachelor's degree in Elementary Education at Western Governors University.</p>
+        <p>With a passion for creating inclusive and positive learning environments, I am committed to making a difference in the lives of students.</p>
     </section>
 
     <section class="contact-form">
-        <h3>Contact Me</h3>
+        <h2>Contact Me</h2>
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
