@@ -18,11 +18,15 @@
             background-color: #0066cc; /* RoyalBlue */
             padding: 20px;
             text-align: center;
-            color: #000000; /* White */
+            color: #fff; /* White */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it's above other elements */
         }
 
         section {
-            padding: 30px;
+            padding: 80px 30px 30px 30px; /* Added top padding to account for fixed header */
             text-align: justify;
         }
 
